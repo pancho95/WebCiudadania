@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web ciudadania italiana</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-dark; top:80">
+    <!-- Main Navbar -->
+    <nav class="uk-navbar-container uk-container" uk-navbar style="position: relative; z-index: 980;">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                    <a href="#"><strong>LOGO</strong></a>
+                </li> 
+            </ul>
+        </div> 
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                <li><a class="uk-text-large uk-text-bold" href="#banner">Inicio</a></li>
+                <li><a class="uk-text-large uk-text-bold" href="#nosotros">Nosotros</a></li>
+                <li><a class="uk-text-large uk-text-bold" href="#services">Servicios</a></li>
+                <li><a class="uk-text-large uk-text-bold" href="#contact">Contacto</a></li>
+            </ul>
+            <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+        </div>
+    </nav>
+</div>
+
+<!-- Responsive menu -->
+<div id="sidenav" uk-offcanvas="flip:true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-close-large uk-align-right" type="button" uk-close uk-toggle="target: #sidenav"></button>
+        <ul class="uk-nav">
+            <li><a class="uk-text-large uk-text-bold" href="#banner">Inicio</a></li>
+            <li><a class="uk-text-large uk-text-bold" href="#nosotros">Nosotros</a></li>
+            <li><a class="uk-text-large uk-text-bold" href="#services">Servicios</a></li>
+            <li><a class="uk-text-large uk-text-bold" href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Principal container -->
+<div class="uk-container">
+
+    <!-- Banner -->
+    <div id="banner" class="uk-position-relative" uk-slideshow="animation: fade; autoplay:true">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="img/building.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/canal.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/map.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="img/scooter.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+    
+        <div class="uk-position-bottom-center uk-position-small">
+            <ul class="uk-thumbnav">
+                <li uk-slideshow-item="0"><a href="#"><img src="img/building.jpg" width="100" alt=""></a></li>
+                <li uk-slideshow-item="1"><a href="#"><img src="img/canal.jpg" width="100" alt=""></a></li>
+                <li uk-slideshow-item="2"><a href="#"><img src="img/map.jpg" width="100" alt=""></a></li>
+                <li uk-slideshow-item="3"><a href="#"><img src="img/scooter.jpg" width="100" alt=""></a></li>
+            </ul>
+        </div>
+    
+    </div>
+
+    <!-- About us section -->
+    <div id="nosotros" class="uk-section">
+        <h2 class="uk-text-center">Quienes somos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reprehenderit eum iure aliquid magni officia quos non, nemo facere, illum, sint numquam optio tempore eaque ad necessitatibus cumque ducimus! Quos?</p>
+    </div>
+
+    <!-- Services section -->
+    <div id="services" class="uk-section">
+        <h2 class="uk-text-center">Servicios</h2>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions section -->
+    <div class="uk-section">
+        <h2 class="uk-text-center">Preguntas Frecuentes (FAQS)</h2>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">titulo pregunta</a>
+                    <div class="uk-accordion-content">respuesta</div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">titulo pregunta</a>
+                    <div class="uk-accordion-content">respuesta</div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">titulo pregunta</a>
+                    <div class="uk-accordion-content">respuesta</div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">titulo pregunta</a>
+                    <div class="uk-accordion-content">respuesta</div>
+                </li>
+            </ul>
+        
+    </div>
+
+    <!-- Map section -->
+    <div class="uk-section">
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">Mapa</div>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div id="contact">
+        <h2 class="uk-text-center">Contacto</h2>
+        <h3 class="uk-text-center">Escribinos tu consulta sobre tu ciudadanía acá</h3>
+
+        <form class="uk-form-stacked uk-flex uk-flex-column uk-flex-center">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="name">Tu nombre</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="name" type="text" placeholder="Tu nombre">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="email">Tu email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="email" type="text" placeholder="Tu email">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="message">Tu Mensaje</label>
+                    <textarea id="message" class="uk-textarea" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+
+    <!-- Footer -->
+    <footer class="uk-section uk-section-secondary uk-light">
+        <h3 class="uk-text-center">LOGO</h3>
+        <div class="uk-container">
+           
+            <div class="uk-grid-match uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+                <div>
+                    <p>Dirección: calle 123 Rosario, Santa Fe, Argentina</p>
+                </div>
+                <div>
+                    <p>Mail:algo@gmail.com</p>
+                    <p>Telefono:343423432</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+</html>
